@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Google DOM Modifier",
+  "version": "1.0",
+  "description": "Modify Google pages automatically.",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://www.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
